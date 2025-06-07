@@ -1,0 +1,157 @@
+/* Center the entire Todo container */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container styling */
+.todo-container {
+  width: 100%;
+  max-width: 500px;
+  background: #1f1f2e;
+  color: white;
+  padding: 30px 30px 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.15);
+}
+
+/* Title */
+.todo-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00ff88;
+}
+
+/* Form styling */
+.todo-container form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.todo-container input[type="text"] {
+  flex-grow: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #00ff88;
+  background: #2e2e3e;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Add button */
+.todo-container button[type="submit"] {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00ff88;
+  color: #1e1e2f;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-container button[type="submit"]:hover {
+  background-color: #00cc6e;
+}
+
+/* List styling */
+.todo-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Todo item */
+.todo-container li {
+  padding: 15px 10px;
+  background: #2e2e3e;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 6px solid #ffaa00;
+}
+
+.todo-container li.completed {
+  border-left: 6px solid #00ff88;
+  color: #aaffcc;
+}
+
+.todo-container li.pending {
+  color: #fff2cc;
+}
+
+/* Text span */
+.todo-container li span {
+  flex-grow: 1;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+/* Button group */
+.btn-group {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Buttons */
+.btn-group button,
+.edit-form button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  min-width: 100px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Action buttons */
+.btn-group button:nth-child(1) {
+  background-color: #00ff88;
+  color: #1e1e2f;
+}
+.btn-group button:nth-child(2) {
+  background-color: #ffaa00;
+  color: #1e1e2f;
+}
+.btn-group button:nth-child(3) {
+  background-color: #ff4c4c;
+  color: #ffffff;
+}
+
+.btn-group button:hover,
+.edit-form button:hover {
+  opacity: 0.9;
+}
+
+/* Edit form */
+.edit-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.edit-form input {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #00ff88;
+  background-color: #2e2e3e;
+  color: white;
+  font-size: 1rem;
+}
